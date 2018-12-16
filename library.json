@@ -1,0 +1,23 @@
+{
+  "keywords": [
+    "home automation","mqtt","domokit","nodemcu","arduino"
+  ],
+  "version": "1.0.0",
+  "name": "Domokit",
+  "authors": 
+		[
+		  {
+			  "url": "https://www.linkedin.com/in/thomas-broussard-463b85129/",
+			  "maintainer": true,
+			  "name": "Thomas Broussard",
+			  "email": "thomas.broussard91@gmail.com"
+		   }
+		],
+  "description": "Librairie dédié aux objets connectés du projet Domokit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thomas-Broussard/Domokit.git"
+  },
+  "frameworks": [],
+  "platforms": []
+}
