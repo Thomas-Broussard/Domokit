@@ -824,7 +824,7 @@ void Domokit::Decode_Instruction(String Instruction,String Topic)
     * ========================================= */ 
     else if(Topic.startsWith(topic_tile))
     {
-      String TileTopic = Topic.substring(topic_tile.length());
+      String TileTopic = Topic.substring(topic_tile.length()+1);
       callBack_Tile(TileTopic,Instruction);
     }
 }
