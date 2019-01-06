@@ -78,9 +78,9 @@
   #define EEPROM_ADDR_WIFI 0x0000
 
   // Pins pour la led RGB
-  #define LED_R_PIN 0x0C
-  #define LED_G_PIN 0x0D
-  #define LED_B_PIN 0x0F
+  #define LED_R_PIN 0x0C 
+  #define LED_G_PIN 0x0F 
+  #define LED_B_PIN 0x0D
 
   // Informations de connexion au serveur MQTT
   #define MQTT_SERVER   "192.168.100.1" 
