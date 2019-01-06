@@ -2,7 +2,7 @@
   "keywords": [
     "home automation","mqtt","domokit","nodemcu","arduino"
   ],
-  "version": "1.0.1",
+  "version": "1.0.0",
   "name": "Domokit",
   "authors": 
 		[
