@@ -851,6 +851,11 @@ void Domokit::Decode_Instruction(String Instruction,String Topic)
     this->MQTT_Send(mTopic,Payload);
   }
 
+
+  void Domokit::resetTile()
+  {
+    composeSetTilePayload("delete",""); delay(1000);
+  }
     /*===============================================================================
     Nom 			: 	setTile
     
@@ -869,7 +874,6 @@ void Domokit::Decode_Instruction(String Instruction,String Topic)
   void Domokit::setTile(String Titre, int Type, String Topic, int levelMin, int levelMax, String onIcon, String offIcon)
   {
       String mTopic = topic_tile + "/" + Topic; 
-      composeSetTilePayload("delete",""); delay(1000);
       composeSetTilePayload("Titre",Titre);
       composeSetTilePayload("Type",String(Type));
       composeSetTilePayload("Topic",mTopic);

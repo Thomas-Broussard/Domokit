@@ -78,9 +78,9 @@
   #define EEPROM_ADDR_WIFI 0x0000
 
   // Pins pour la led RGB
-  //#define LED_R_PIN D8
-  //#define LED_G_PIN D6
-  //#define LED_B_PIN D7
+  #define LED_R_PIN 0x0C
+  #define LED_G_PIN 0x0D
+  #define LED_B_PIN 0x0F
 
   // Informations de connexion au serveur MQTT
   #define MQTT_SERVER   "192.168.100.1" 
@@ -163,6 +163,7 @@ typedef enum{NON_CONNECTE,APPAIRAGE,CONNECTE,ETEINT} Statut_Wifi;
       void clignoterLedWifi(Statut_Wifi Mode,int Nb_clignotement, int Duree_clignotement_ms);
 
       // Gestion des Tiles
+      void resetTile();
       void SendtoTile(String topic, String payload);
       void SendIconToTile(String topic, String fa_icon, String color);
       
